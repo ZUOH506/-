@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宁国府与四大家族人物关系树</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏛️ 宁国府</h1>
+            <p>四大家族人物关系树状图</p>
+            <div class="family-badge">
+                <span class="badge badge-jia">贾家</span>
+                <span class="badge badge-shi">史家</span>
+                <span class="badge badge-wang">王家</span>
+                <span class="badge badge-xue">薛家</span>
+            </div>
+        </div>
+
+        <div class="tree-container">
+            <div class="tree" id="tree-container"></div>
+        </div>
+
+        <div class="family-legend">
+            <div class="legend-item">
+                <span class="legend-color legend-jia"></span>
+                <span>贾家</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color legend-shi"></span>
+                <span>史家</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color legend-wang"></span>
+                <span>王家</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color legend-xue"></span>
+                <span>薛家</span>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="rongguo.html">查看荣国府人物关系 →</a>
+        </div>
+    </div>
+
+    <script src="characters.js"></script>
+    <script src="tree.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initTree('tree-container', 'ningguo');
+        });
+    </script>
+</body>
+</html>
